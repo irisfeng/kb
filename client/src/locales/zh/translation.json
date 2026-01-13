@@ -1,0 +1,52 @@
+{
+  "app": {
+    "title": "方案知识库",
+    "nav": {
+      "solutions": "方案广场",
+      "assistant": "智能助手"
+    }
+  },
+  "solutions": {
+    "title": "方案列表",
+    "add_new": "上传新方案",
+    "form": {
+      "title": "方案标题",
+      "title_placeholder": "例如：企业网络架构方案",
+      "description": "方案描述",
+      "description_placeholder": "请输入方案的简要描述...",
+      "document": "方案文档 (支持 PDF, Word, Markdown, CSV, Excel, HTML)",
+      "drop_text": "点击或拖拽文件到此处上传",
+      "upload_btn": "上传并解析",
+      "uploading": "上传中...",
+      "success": "上传成功！",
+      "fail": "上传失败"
+    },
+    "card": {
+      "processed": "已解析",
+      "file": "源文件",
+      "delete": "删除",
+      "delete_confirm": "确认删除此方案？",
+      "delete_success": "删除成功"
+    }
+  },
+  "chat": {
+    "empty_state": "关于方案库，您可以问我任何问题",
+    "placeholder": "请输入您的问题...",
+    "send": "发送",
+    "error": "抱歉，出错了。"
+  },
+  "solutionDetail": {
+    "back": "返回方案列表",
+    "preview": {
+      "title": "文档预览",
+      "searchPlaceholder": "在文档中搜索...",
+      "noResults": "没有找到匹配的内容",
+      "loadMore": "加载更多",
+      "emptyContent": "暂无文档内容"
+    },
+    "chat": {
+      "title": "智能问答",
+      "placeholder": "请输入您的问题..."
+    }
+  }
+}

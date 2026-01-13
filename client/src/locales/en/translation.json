@@ -1,0 +1,52 @@
+{
+  "app": {
+    "title": "Solution KB",
+    "nav": {
+      "solutions": "Solutions",
+      "assistant": "Assistant"
+    }
+  },
+  "solutions": {
+    "title": "Solution Library",
+    "add_new": "Add New Solution",
+    "form": {
+      "title": "Title",
+      "title_placeholder": "e.g. Enterprise Network Architecture",
+      "description": "Description",
+      "description_placeholder": "Brief description of the solution...",
+      "document": "Document (PDF, Word, Markdown, CSV, Excel, HTML)",
+      "drop_text": "Click or drag file to upload",
+      "upload_btn": "Upload & Process",
+      "uploading": "Uploading...",
+      "success": "Upload successful!",
+      "fail": "Upload failed"
+    },
+    "card": {
+      "processed": "Processed",
+      "file": "File",
+      "delete": "Delete",
+      "delete_confirm": "Confirm delete this solution?",
+      "delete_success": "Deleted successfully"
+    }
+  },
+  "chat": {
+    "empty_state": "Ask anything about the solutions library",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "error": "Sorry, something went wrong."
+  },
+  "solutionDetail": {
+    "back": "Back to Solutions",
+    "preview": {
+      "title": "Document Preview",
+      "searchPlaceholder": "Search in document...",
+      "noResults": "No matching content found",
+      "loadMore": "Load More",
+      "emptyContent": "No document content available"
+    },
+    "chat": {
+      "title": "AI Chat",
+      "placeholder": "Type your question..."
+    }
+  }
+}
