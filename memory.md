@@ -62,17 +62,22 @@
     - `SolutionChat.tsx` - 方案专用聊天组件
   - 路由：扩展状态管理，新增 `solution-detail` 视图（不引入 React Router）
   - 更新文件：`App.tsx`, `SolutionCard.tsx`, `server/src/index.js`, `locales/*/translation.json`
-- **2026-01-13**: 文档预览格式匹配功能 + Bug 修复
+- **2026-01-13**: 文档预览格式匹配功能 + Bug 修复 + 图片支持
   - 新增：根据文件扩展名自动检测格式（PDF/Word/Excel/Markdown/TXT/HTML）
   - 新增：格式标签显示（带颜色图标：PDF红色、Word蓝色、Excel绿色等）
   - 新增：分块/完整文档视图切换（Markdown 文件）
   - 新增：Markdown 渲染（使用 react-markdown + remarkGfm）
   - 新增：Tailwind Typography 配置（prose 样式）
+  - 新增：从 MinerU ZIP 中提取并保存图片
+  - 新增：图片静态文件服务（/images 路径）
+  - 新增：Vite 代理配置（/images → 后端 3001）
   - **Bug 修复**：collectionId 保存错误
     - 问题：FastGPT 返回 `{ collectionId: 'xxx', results: {...} }`，代码错误使用了 `collectionId.id`
     - 修复：改为 `responseData?.collectionId`
   - 安装依赖：react-markdown, remark-gfm, @tailwindcss/typography
-  - 更新文件：`DocumentPreview.tsx`, `SolutionDetail.tsx`, `tailwind.config.js`, `server/src/index.js`
+  - 更新文件：`DocumentPreview.tsx`, `SolutionDetail.tsx`, `tailwind.config.js`, `server/src/index.js`, `vite.config.ts`
+  - 新增文件：`docs/FASTGPT_DEPLOYMENT.md` - FastGPT 部署指南
+  - 代码仓库：推送到 GitHub (https://github.com/irisfeng/kb)
 
 ## 当前状态
 
