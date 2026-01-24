@@ -23,6 +23,15 @@ export default {
           600: '#d97706', // Amber-600
           700: '#b45309',
         },
+        // 柔和的深色模式配色 (Zinc 色系 - 带 warmth 的灰色)
+        dark: {
+          bg: '#18181B',      // zinc-900 - 主背景
+          card: '#27272A',    // zinc-800 - 卡片/容器
+          border: '#3F3F46',  // zinc-700 - 边框/分隔线
+          muted: '#71717A',   // zinc-500 - 次要文字
+          text: '#FAFAFA',    // zinc-50 - 主要文字
+          textSecondary: '#A1A1AA', // zinc-400 - 次要文字
+        },
       },
       spacing: {
         '12': '12px',

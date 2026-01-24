@@ -11,9 +11,24 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',  // 允许内网访问
+    port: 5173,
     proxy: {
+      '/api': {
+        target: 'http://192.168.6.125:3001',
+        changeOrigin: true,
+      },
       '/images': {
-        target: 'http://localhost:3001',
+        target: 'http://192.168.6.125:3001',
+        changeOrigin: true,
+      },
+      '/files': {
+        target: 'http://192.168.6.125:3001',
+        changeOrigin: true,
+      },
+      // Proxy FastGPT file links
+      '/api/system/file': {
+        target: 'http://192.168.6.125:3000',
         changeOrigin: true,
       },
     },

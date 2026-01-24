@@ -3,7 +3,8 @@
     "title": "方案知识库",
     "nav": {
       "solutions": "方案广场",
-      "assistant": "智能助手"
+      "upload": "上传方案",
+      "capabilities": "产品能力库"
     }
   },
   "solutions": {
@@ -30,10 +31,26 @@
     }
   },
   "chat": {
+    "title": "智能助手",
     "empty_state": "关于方案库，您可以问我任何问题",
     "placeholder": "请输入您的问题...",
     "send": "发送",
-    "error": "抱歉，出错了。"
+    "error": "抱歉，出错了。",
+    "sources": "参考来源",
+    "relatedSolutions": "相关方案",
+    "citationCount": "{count} 条引用",
+    "clear": "清空对话",
+    "clear_confirm": "确认清空所有对话记录？此操作无法撤销。",
+    "clear_success": "对话已清空",
+    "clear_failed": "清空失败，请稍后重试",
+    "copy": "复制",
+    "resend": "重发",
+    "edit": "编辑",
+    "delete": "删除",
+    "delete_confirm": "确认删除这条消息？",
+    "thinking": "正在思考...",
+    "copy_success": "已复制到剪贴板",
+    "copy_failed": "复制失败"
   },
   "solutionDetail": {
     "back": "返回方案列表",
@@ -48,5 +65,43 @@
       "title": "智能问答",
       "placeholder": "请输入您的问题..."
     }
+  },
+  "capabilities": {
+    "title": "产品能力库",
+    "description": "管理产品能力信息，用于 AI 辅助方案编写",
+    "add_new": "添加产品能力",
+    "empty_state": "暂无产品能力",
+    "empty_hint": "点击上方按钮添加第一个产品能力",
+    "form": {
+      "name": "产品名称",
+      "name_placeholder": "例如：智能外呼系统",
+      "category": "产品类别",
+      "category_placeholder": "例如：通信服务",
+      "description": "产品概述",
+      "description_placeholder": "简要描述产品的核心功能和价值...",
+      "features": "核心功能",
+      "features_placeholder": "每行一个功能点",
+      "useCases": "应用场景",
+      "useCases_placeholder": "每行一个应用场景",
+      "benefits": "产品优势",
+      "benefits_placeholder": "每行一个优势点",
+      "specs": "技术规格",
+      "specs_placeholder": "JSON 格式：[{\"name\":\"规格名\",\"value\":\"规格值\",\"unit\":\"单位\"}]",
+      "performance": "性能指标",
+      "performance_placeholder": "JSON 格式：{\"concurrency\":\"1000\",\"responseTime\":\"<100ms\"}",
+      "submit": "保存",
+      "cancel": "取消",
+      "edit": "编辑",
+      "delete": "删除"
+    },
+    "card": {
+      "features": "核心功能",
+      "useCases": "应用场景",
+      "edit": "编辑",
+      "delete": "删除",
+      "delete_confirm": "确认删除此产品能力？"
+    },
+    "success": "保存成功",
+    "delete_success": "删除成功"
   }
 }

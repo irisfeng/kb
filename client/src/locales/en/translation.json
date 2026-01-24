@@ -3,7 +3,8 @@
     "title": "Solution KB",
     "nav": {
       "solutions": "Solutions",
-      "assistant": "Assistant"
+      "upload": "Upload Solution",
+      "capabilities": "Product Capabilities"
     }
   },
   "solutions": {
@@ -30,10 +31,26 @@
     }
   },
   "chat": {
+    "title": "AI Assistant",
     "empty_state": "Ask anything about the solutions library",
     "placeholder": "Type your question...",
     "send": "Send",
-    "error": "Sorry, something went wrong."
+    "error": "Sorry, something went wrong.",
+    "sources": "Sources",
+    "relatedSolutions": "Related Solutions",
+    "citationCount": "{count} citations",
+    "clear": "Clear Chat",
+    "clear_confirm": "Confirm to clear all chat history? This action cannot be undone.",
+    "clear_success": "Chat cleared",
+    "clear_failed": "Failed to clear, please try again later",
+    "copy": "Copy",
+    "resend": "Resend",
+    "edit": "Edit",
+    "delete": "Delete",
+    "delete_confirm": "Confirm to delete this message?",
+    "thinking": "Thinking...",
+    "copy_success": "Copied to clipboard",
+    "copy_failed": "Failed to copy"
   },
   "solutionDetail": {
     "back": "Back to Solutions",
@@ -48,5 +65,43 @@
       "title": "AI Chat",
       "placeholder": "Type your question..."
     }
+  },
+  "capabilities": {
+    "title": "Product Capabilities",
+    "description": "Manage product capabilities for AI-assisted solution writing",
+    "add_new": "Add Product Capability",
+    "empty_state": "No product capabilities yet",
+    "empty_hint": "Click the button above to add your first product capability",
+    "form": {
+      "name": "Product Name",
+      "name_placeholder": "e.g. Intelligent Outbound Calling System",
+      "category": "Category",
+      "category_placeholder": "e.g. Communication Services",
+      "description": "Description",
+      "description_placeholder": "Brief description of core features and value...",
+      "features": "Core Features",
+      "features_placeholder": "One feature per line",
+      "useCases": "Use Cases",
+      "useCases_placeholder": "One use case per line",
+      "benefits": "Benefits",
+      "benefits_placeholder": "One benefit per line",
+      "specs": "Technical Specs",
+      "specs_placeholder": "JSON format: [{\"name\":\"spec name\",\"value\":\"spec value\",\"unit\":\"unit\"}]",
+      "performance": "Performance",
+      "performance_placeholder": "JSON format: {\"concurrency\":\"1000\",\"responseTime\":\"<100ms\"}",
+      "submit": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "card": {
+      "features": "Features",
+      "useCases": "Use Cases",
+      "edit": "Edit",
+      "delete": "Delete",
+      "delete_confirm": "Confirm to delete this product capability?"
+    },
+    "success": "Saved successfully",
+    "delete_success": "Deleted successfully"
   }
 }

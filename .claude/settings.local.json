@@ -35,7 +35,22 @@
       "Bash(git reset:*)",
       "Bash(git branch:*)",
       "Bash(git remote add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Skill(planning-with-files)",
+      "Bash(npm start)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(dir:*)",
+      "mcp__zread__get_repo_structure",
+      "mcp__zread__search_doc",
+      "Bash(node:*)",
+      "Bash(if exist uploads rmdir:*)",
+      "mcp__zai-mcp-server__ui_to_artifact",
+      "mcp__zai-mcp-server__understand_technical_diagram",
+      "Bash(npm run build:*)",
+      "Bash(npx eslint:*)",
+      "Bash(timeout:*)"
     ]
   }
 }

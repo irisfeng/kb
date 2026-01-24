@@ -6,13 +6,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - **Tony**: 产品经理，只会写一点代码
 - **语言偏好**: 中英文都基本 OK，以中文为主
-- **目标**: 正在探索 Claude Code 的用法，请多帮助他
+- **目标**: 正在探索 Claude Code 的用法和智能化产品的开发，请多帮助他
 
-## 记忆管理
+## 项目管理
 
-- **memory.md**: 存储 Tony 使用 Claude Code 的相关记忆
-  - 每次**启动**时，都要读取当前文件夹下的 `memory.md` 查看之前的记录,如果没有请新建
-  - 每次**大改动**时，也要把重要信息记录到 `memory.md`
+**使用 planning-with-files plugin**: 管理项目进度和任务分配
+
+## UI设计
+
+**使用 ui-ux-pro-max 和 frontend-design 技能** 根据项目整体要求，设计出优雅、简洁的用户界面，最大化提升用户体验。
 
 ## 产品方法论
 

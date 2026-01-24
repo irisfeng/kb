@@ -5,6 +5,8 @@ type Theme = 'light' | 'dark';
 interface ThemeContextType {
   theme: Theme;
   toggleTheme: () => void;
+  sidebarCollapsed: boolean;
+  toggleSidebar: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -28,6 +30,12 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     return (saved === 'light' || saved === 'dark') ? saved : 'dark';
   });
 
+  // 从 localStorage 读取 sidebar 状态，默认为展开
+  const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(() => {
+    const saved = localStorage.getItem('sidebarCollapsed');
+    return saved === 'true';
+  });
+
   useEffect(() => {
     // 更新 localStorage
     localStorage.setItem('theme', theme);
@@ -40,12 +48,21 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     }
   }, [theme]);
 
+  useEffect(() => {
+    // 保存 sidebar 状态到 localStorage
+    localStorage.setItem('sidebarCollapsed', String(sidebarCollapsed));
+  }, [sidebarCollapsed]);
+
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
+  const toggleSidebar = () => {
+    setSidebarCollapsed(prev => !prev);
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, sidebarCollapsed, toggleSidebar }}>
       {children}
     </ThemeContext.Provider>
   );
